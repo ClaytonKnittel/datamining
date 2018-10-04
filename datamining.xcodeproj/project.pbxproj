@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE071AEF21540DD900C2F2F7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE071AEE21540DD900C2F2F7 /* main.cpp */; };
+		CE071AF721540DF900C2F2F7 /* tensor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE071AF521540DF900C2F2F7 /* tensor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,11 @@
 /* Begin PBXFileReference section */
 		CE071AEB21540DD800C2F2F7 /* datamining */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = datamining; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE071AEE21540DD900C2F2F7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CE071AF521540DF900C2F2F7 /* tensor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tensor.cpp; sourceTree = "<group>"; };
+		CE071AF621540DF900C2F2F7 /* tensor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tensor.hpp; sourceTree = "<group>"; };
+		CE913017215A9E0600316EA8 /* decisionTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = decisionTree.h; sourceTree = "<group>"; };
+		CEA85619215D420700EF1A31 /* randomForest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = randomForest.h; sourceTree = "<group>"; };
+		CED67ADD2163D99A0044911E /* svm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = svm.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 		CE071AE221540DD800C2F2F7 = {
 			isa = PBXGroup;
 			children = (
+				CE913016215A9DEF00316EA8 /* lecturenotes */,
 				CE071AED21540DD800C2F2F7 /* datamining */,
 				CE071AEC21540DD800C2F2F7 /* Products */,
 			);
@@ -58,8 +65,20 @@
 			isa = PBXGroup;
 			children = (
 				CE071AEE21540DD900C2F2F7 /* main.cpp */,
+				CE071AF521540DF900C2F2F7 /* tensor.cpp */,
+				CE071AF621540DF900C2F2F7 /* tensor.hpp */,
 			);
 			path = datamining;
+			sourceTree = "<group>";
+		};
+		CE913016215A9DEF00316EA8 /* lecturenotes */ = {
+			isa = PBXGroup;
+			children = (
+				CE913017215A9E0600316EA8 /* decisionTree.h */,
+				CEA85619215D420700EF1A31 /* randomForest.h */,
+				CED67ADD2163D99A0044911E /* svm.h */,
+			);
+			path = lecturenotes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE071AF721540DF900C2F2F7 /* tensor.cpp in Sources */,
 				CE071AEF21540DD900C2F2F7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
